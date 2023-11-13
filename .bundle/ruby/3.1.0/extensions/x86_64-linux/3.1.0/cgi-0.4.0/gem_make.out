@@ -1,0 +1,15 @@
+current directory: /home/runner/3901Task1/.bundle/ruby/3.1.0/gems/cgi-0.4.0/ext/cgi/escape
+/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/bin/ruby -I /nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /home/runner/3901Task1/.bundle/ruby/3.1.0/gems/cgi-0.4.0/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20231108-302-6sf1nx sitelibdir\=./.gem.20231108-302-6sf1nx clean
+
+current directory: /home/runner/3901Task1/.bundle/ruby/3.1.0/gems/cgi-0.4.0/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20231108-302-6sf1nx sitelibdir\=./.gem.20231108-302-6sf1nx
+compiling escape.c
+linking shared-object cgi/escape.so
+
+current directory: /home/runner/3901Task1/.bundle/ruby/3.1.0/gems/cgi-0.4.0/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20231108-302-6sf1nx sitelibdir\=./.gem.20231108-302-6sf1nx install
+install -c -p -m 755 escape.so ./.gem.20231108-302-6sf1nx/cgi

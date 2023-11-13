@@ -1,0 +1,64 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Google Charts with ERB</title>
+      <% require 'googlecharts' %>
+    </head>
+    <body>
+      <h2> Line Chart - Sales Over Time </h2>
+
+      <img src="<%= Gchart.line(
+        :size => '400x300',
+        :title => "Monthly Sales",
+        :bg => 'f8f8f8', # Light gray background
+        :legend => ['Electronics', 'Clothing'],
+        :data => [3000, 2500, 3500, 2000, 4000],
+        :line_colors => ['3366CC', 'DC3912'] # Line colors for Electronics and Clothing sales
+      ) %>" alt="Line Chart"/>
+
+      <h2> Pie Chart - Expenses Breakdown </h2>
+      <img src="<%= Gchart.pie(
+        :title => "Monthly Expenses",
+        :data => [20, 35, 45],
+        :legend => ['Utilities', 'Entertainment', 'Food'],
+        :bar_colors => ['FF9900', '109618', '990099'] # Custom colors for each expense category
+      ) %>" alt="Pie Chart"/>
+
+      <h2> 3D Pie Chart - Market Share </h2>
+      <img src="<%= Gchart.pie_3d(
+        :title => "Product Market Share",
+        :data => [20, 35, 45],
+        :legend => ['Product A', 'Product B', 'Product C'],
+        :bar_colors => ['FF9900', '109618', '990099']
+      ) %>" alt="3D Pie Chart"/>
+
+      <h2> Venn Diagram - Customer Preferences </h2>
+      <img src="<%= Gchart.venn(
+        :data => [100, 80, 60, 30, 30, 30, 10],
+        :bg => 'f8f8f8' # Light gray background
+      ) %>" alt="Venn Diagram"/>
+
+      <h2> Bar Chart - Matt vs. Rob's Mojo </h2>
+      <img src="<%= Gchart.bar(:title => "Mojo Battle",
+        :data => [[300, 100, 30, 200], [100, 200, 300, 10]], 
+        :bar_colors => ['FF0000', '00FF00'],
+        :stacked => false, :size => '400x200',
+        :legend => ["Matt's Mojo", "Rob's Mojo"]
+      ) %>" alt="Bar Chart"/>
+
+      <h2> SparkLine Chart - Daily Stock Prices </h2>
+      <%= data = [27,25,25,25,25,27,100,31,25,36,25,25,39,25,31,25,25,25,26,26,25,25,28,25,25,100,28,27,31,25,27,27,29,25,27,26,26,25,26,26,35,33,34,25,26,25,36,25,26,37,33,33,37,37,39,25,25,25,25]
+      Gchart.sparkline(:data => data, :size => '120x40', :line_colors => '0077CC', :format => 'image_tag') %>
+
+      <h2> Scatter Chart - Data Points Analysis </h2>
+      <img src="<%= Gchart.scatter(
+        :title => "Data Points Analysis",
+        :bg => 'f8f8f8',
+        :legend => ['Product A'],
+        :data => [[1, 2], [3, 4], [5, 6], [7, 8]],
+        :size => '300x300',
+        :marker_colors => ['3366CC'] # Marker color for data points
+      ) %>" alt="Scatter Chart"/>
+
+    </body>
+  </html>
