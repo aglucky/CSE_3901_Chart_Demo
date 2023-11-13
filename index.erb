@@ -13,7 +13,9 @@
         :bg => 'f8f8f8', # Light gray background
         :legend => ['Electronics', 'Clothing'],
         :data => [3000, 2500, 3500, 2000, 4000],
-        :line_colors => ['3366CC', 'DC3912'] # Line colors for Electronics and Clothing sales
+        :line_colors => ['3366CC', 'DC3912'], # Line colors for Electronics and Clothing sales
+        :axis_with_labels => 'x',
+        :axis_labels => [['Jan','Feb','Mar','Apr','May']]
       ) %>" alt="Line Chart"/>
 
       <h2> Pie Chart - Expenses Breakdown </h2>
@@ -55,9 +57,11 @@
         :title => "Data Points Analysis",
         :bg => 'f8f8f8',
         :legend => ['Product A'],
-        :data => [[1, 2], [3, 4], [5, 6], [7, 8]],
+        :data => [[1, 2, 3, 4, 5], [1, 2, 3, 4 ,5], [5, 4, 3, 2, 1]],
         :size => '300x300',
-        :marker_colors => ['3366CC'] # Marker color for data points
+        :marker_colors => ['3366CC'], # Marker color for data points,
+        :axis_with_labels => 'x,y',
+        :axis_labels => [[1,2,3,4,5], [1,2,3,4,5]]
       ) %>" alt="Scatter Chart"/>
 
     </body>
