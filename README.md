@@ -1,19 +1,20 @@
-# Ruby on Replit
+# Ruby with Google Charts
+This Replit project serves as a guide to using Ruby with Google Charts to create interactive charts and graphs for web applications. 
 
-This is a template to get you started with Ruby on Replit. It's ready to go so you can just hit run and start coding!
+## Getting Started
+To use this project, simply clone the repository or import it into Replit. 
 
-## Running the repl
+### Prerequisites
+Make sure you have Ruby installed on your machine.
 
-Simply hit run! You can edit the run command from the `.replit` file.
+### Installing
+Run the following command to install any necessary dependencies:
 
-## Installing packages
+```bundle install```
 
-To add packages to your repl, we recommend using the Replit packager interface in the left sidebar or using `bundle install` in the shell. Check out the [Bundle docs here](https://bundler.io/guides/getting_started.html).
 
-**Warning: Avoid using `gem install` to add packages.**
 
-Beacuse Ruby repls use [Bundle](https://bundler.io/) under the hood to provide a consistent environment that tracks and installs the exact gems and versions needed, we recommend using `bundle install` instead of `gem install`, which may not work as expected.
+## Running the Application
+Run the following command to run the program
 
-## Help
-
-If you need help you might be able to find an answer on our [docs](https://docs.replit.com) page. Feel free to report bugs and give us feedback [here](https://replit.com/support).
+```bundle exec ruby main.rb```
